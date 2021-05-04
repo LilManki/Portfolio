@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+:root{
+    --text-main: 'Roboto Slab', serif;
+    --text-secondary: 'Roboto', sans-serif;
+}
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#eee;
+    background-color: #333;
+}
+section{
+    min-height: 100vh;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    background-image: url('./src/background.jpg');
+    background-size: cover;
+}
+
+.works{
+    position: relative;
+}
+
+
+h1,h2{
+    font-family: var(--text-main);
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragraph{
+    font-family: var(--text-secondary);
+    font-size: 1.2rem;
+}
+.container-image{
+    width: 300px;
+    height: 80vh;
+    background-image: url('./src/photography2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contain-works{
+    width: 80vw;
+    height: 60vh;
+    background-image: url('./src/proyecto-votacion.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.link-at-work{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: #3333338c;
+    text-decoration: none;
+    color:#eee;
+    text-align: center;
+    font-family: var(--text-main);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-at-work:hover{
+    background-color: #afafaf8c;
+}
+
+.contact-to-me{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.contain-info{
+    display: flex;
+}
+
+.contain-info .email{
+    background-color: #111;
+    margin-right: 1rem;
+}
+
+.contain-info .email,.contain-info .copy{
+    font-family: var(--text-secondary);
+    padding: .2rem;
+    font-size: 1rem;
+    height: 2rem;
+    box-sizing: border-box;
+}
+
+.contain-info .copy{
+    width: 5rem;
+    background-color:  rgb(13, 179, 13);
+    color:#eee;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.alert{
+    margin-top: 1rem;
+    height: 2rem;
+    background-color: rgb(135, 219, 119);
+    border: 2px solid rgb(51, 165, 29);
+    border-radius: 5px;
+    color:rgb(37, 121, 21);
+    font-family: var(--text-secondary);
+    padding: 5px;
+}
+
+.alert.invisible{
+    display:none;
+}
