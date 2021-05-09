@@ -10,7 +10,6 @@ buttonCopy.addEventListener('click', () =>{
     window.getSelection().addRange(selection);
     const res = document.execCommand('copy');
     window.getSelection().removeRange(selection);
-
     showAlert();
 })
 
@@ -18,7 +17,10 @@ buttonCopy.addEventListener('click', () =>{
 const showAlert = () =>{
     const alert = document.querySelector('.alert');
     alert.classList.remove('invisible');
+    alert.scrollIntoView();
+    buttonCopy.setAttribute('disabled', '');
     setTimeout(()=>{
-        alert.classList.add('invisible')
+        buttonCopy.removeAttribute('disabled');
+        alert.classList.add('invisible');
     },1500);
 }

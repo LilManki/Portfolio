@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://css.gg/instagram.css');
 :root{
     --text-main: 'Roboto Slab', serif;
     --text-secondary: 'Roboto', sans-serif;
@@ -27,6 +28,27 @@ section{
     position: relative;
 }
 
+.instagram{
+    font-family: var(--text-secondary);
+    font-size: 1.5rem;
+    align-self: end;
+    margin: 1rem 0;
+    display: flex;
+    color: #a9d9fd;
+}
+.instagram i {
+    color:inherit;
+    margin-right: .5rem;
+}
+.instagram a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: inherit;
+}
+
+.instagram:hover{
+    color:#5db9ff;
+}
 
 h1,h2{
     font-family: var(--text-main);
@@ -38,6 +60,7 @@ h1,h2{
 .paragraph{
     font-family: var(--text-secondary);
     font-size: 1.2rem;
+    text-align: center;
 }
 .container-image{
     width: 300px;
@@ -45,6 +68,7 @@ h1,h2{
     background-image: url('./src/photography2.jpg');
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
 }
 
 .contain-works{
@@ -78,8 +102,7 @@ h1,h2{
 .contact-to-me{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
+    margin: 2rem 0;
 }
 
 .contain-info{
@@ -121,4 +144,23 @@ h1,h2{
 
 .alert.invisible{
     display:none;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 700px){
+    .container-image{
+        width: 500px;
+    }
+    .responsive-box{
+        display:flex;
+        margin:2rem 0;
+    }
+
+    .text-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
 }
